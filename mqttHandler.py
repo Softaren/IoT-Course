@@ -19,8 +19,8 @@ def send_temp_value():
     topic = topic_pub + "/temp"
     try:
         dht_T, dht_RH = read_dht.value()
-        print('dht temp: ', dht_T) # one byte
-        print('dht RH: ', dht_RH) # one byte
+        print('dht temp: ', dht_T)
+        print('dht RH: ', dht_RH)
 
         sensorData = {
               "groundFloorTempAndHumi":{
