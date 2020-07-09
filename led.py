@@ -1,7 +1,7 @@
 import pycom
 import time
 
-# Blink pycom heartbeat: Color Greeen
+# Blink pycom heartbeat in Color Greeen
 def blink_led_green():
     pycom.heartbeat(False)
     pycom.rgbled(0xfcfc03)
