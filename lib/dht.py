@@ -51,7 +51,7 @@ class DTH:
         if len(bits) != 40:
             return DTHResult(DTHResult.ERR_MISSING_DATA, 0, 0)
         #print(bits)
-        # we have the bits, now calculate bytes
+        # we have the bits, calculate bytes
         the_bytes = self.__bits_to_bytes(bits)
         # calculate checksum and check
         checksum = self.__calculate_checksum(the_bytes)

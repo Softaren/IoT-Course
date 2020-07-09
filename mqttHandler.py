@@ -14,7 +14,7 @@ client_name = ubinascii.hexlify(hashlib.md5(machine.unique_id()).digest()) # cre
 client = MQTTClient(client_name, broker_url, port=1883)
 client.connect()
 
-# Get and send temperature values to publisher
+# Get and send temp values to publisher
 def send_temp_value():
     topic = topic_pub + "/temp"
     try:

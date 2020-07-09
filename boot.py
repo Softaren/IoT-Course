@@ -3,7 +3,7 @@ import machine
 import json
 wlan = WLAN(mode=WLAN.STA)
 
-# Open secrets/config file
+# Open config file
 with open('secrets/config.json') as f:
     config = json.load(f)
 

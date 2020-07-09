@@ -10,7 +10,7 @@ def send():
         mqtHand.send_temp_value()
     sleep()
 
-# Go to deepsleep for 3 hours, but allow P22 (PIR sensor) to wake machine so it's able to send motion detected,
+# Go to deepsleep for 3 hours, allow P22 (PIR sensor) to wake machine so it's able to send motion detected,
 # otherwise wake up every third hour to send temp data.
 def sleep():
     machine.pin_sleep_wakeup(['P22'], mode=machine.WAKEUP_ANY_HIGH, enable_pull=False)
